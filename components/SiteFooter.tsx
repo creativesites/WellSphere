@@ -8,7 +8,7 @@ export function SiteFooter() {
       <div className="wrap">
         <div className="foot">
           <div>
-            <Image src="/images/logo.jpg" alt={site.name} width={300} height={170} />
+            <Image src="/images/logo.png" alt={site.name} width={640} height={417} />
             <p style={{ margin: 0, maxWidth: 300 }}>{site.tagline}</p>
           </div>
           <div>

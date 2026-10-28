@@ -44,7 +44,7 @@ export default function CompanyProfilePage() {
         <div className="wrap">
           <Reveal className="dl-card">
             <div className="cover">
-              <Image src="/images/logo.jpg" alt="" width={300} height={170} style={{ width: '100%', height: 'auto' }} />
+              <Image src="/images/logo.png" alt="" width={640} height={417} style={{ width: '100%', height: 'auto' }} />
               <b>Company Profile</b>
               <span>Wellsphere General Dealers</span>
             </div>

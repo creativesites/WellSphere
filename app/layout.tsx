@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     siteName: site.name,
     title: site.name,
     description: site.description,
-    images: [{ url: '/images/logo.jpg', width: 300, height: 170, alt: site.name }],
+    images: [{ url: '/images/logo.png', width: 640, height: 417, alt: site.name }],
   },
   twitter: { card: 'summary_large_image', title: site.name, description: site.description },
   robots: { index: true, follow: true },
@@ -72,7 +72,7 @@ const localBusiness = {
   address: { '@type': 'PostalAddress', addressLocality: 'Lusaka', addressCountry: 'ZM' },
   identifier: { '@type': 'PropertyValue', name: 'PACRA Registration Number', value: site.registrationNumber },
   areaServed: 'ZM',
-  logo: `${site.url}/images/logo.jpg`,
+  logo: `${site.url}/images/logo.png`,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
