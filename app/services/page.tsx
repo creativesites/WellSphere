@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Reveal } from '@/components/Reveal';
 import { services } from '@/lib/site';
@@ -27,6 +28,33 @@ export default function ServicesPage() {
             From statutory registrations and environmental approvals to software, building supplies and office equipment,
             we deliver under one roof.
           </p>
+        </div>
+      </section>
+
+      <section className="block tight-top">
+        <div className="wrap">
+          <div className="field-grid">
+            <Reveal className="field-shot">
+              <Image
+                src="/images/field/supply-delivery.jpg"
+                alt="A Wellsphere team member hands over a supply delivery note and power tools at a construction site"
+                fill
+                sizes="(max-width: 640px) 100vw, 60vw"
+                style={{ objectFit: 'cover' }}
+              />
+              <span className="field-caption">Supply and delivery to client sites</span>
+            </Reveal>
+            <Reveal className="field-shot" delay={120}>
+              <Image
+                src="/images/field/building-site.jpg"
+                alt="A builder laying blocks with mortar on a construction site"
+                fill
+                sizes="(max-width: 640px) 100vw, 40vw"
+                style={{ objectFit: 'cover', objectPosition: 'center 30%' }}
+              />
+              <span className="field-caption">Building materials and construction</span>
+            </Reveal>
+          </div>
         </div>
       </section>
 
